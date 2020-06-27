@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Articles</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="footer, address, phone, icons" />
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link rel="stylesheet" href="{% static 'footer.css' %}">
+        <!--<link rel="stylesheet" href="{% static 'navbar.css' %}">-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <!--{% include 'parts/navbar.html' %}-->
+        {% include 'parts/header.html' %}
+        <div class="wrapper">
+                {% block content %}
+                {% endblock %}
+        </div>
+        {% include 'parts/footer.html' %}
+</body>
